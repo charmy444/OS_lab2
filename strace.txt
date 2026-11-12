@@ -1,0 +1,148 @@
+8590  02:55:32.288225 execve("./parent", ["./parent"], 0xffffdeb1bc48 /* 54 vars */) = 0
+8590  02:55:32.290460 brk(NULL)         = 0xc729e9ad8000
+8590  02:55:32.290896 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf867b8e37000
+8590  02:55:32.292529 faccessat(AT_FDCWD</home/ubuntu/Desktop/lab2>, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+8590  02:55:32.293053 openat(AT_FDCWD</home/ubuntu/Desktop/lab2>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+8590  02:55:32.293634 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=72223, ...}) = 0
+8590  02:55:32.294502 mmap(NULL, 72223, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0xf867b8def000
+8590  02:55:32.294774 close(3</etc/ld.so.cache>) = 0
+8590  02:55:32.294975 openat(AT_FDCWD</home/ubuntu/Desktop/lab2>, "/usr/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+8590  02:55:32.295041 read(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\3101\2\0\0\0\0\0@\0\0\0\0\0\0\0P9\33\0\0\0\0\0\0\0\0\0@\08\0\r\0@\0@\0?\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\330\2\0\0\0\0\0\0\330\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\250?\27\0\0\0\0\0\250?\27\0\0\0\0\0\250?\27\0\0\0\0\0\33\0\0\0\0\0\0\0\33\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+8590  02:55:32.295136 fstat(3</usr/lib/aarch64-linux-gnu/libc.so.6>, {st_mode=S_IFREG|0755, st_size=1788240, ...}) = 0
+8590  02:55:32.295179 mmap(NULL, 1957440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf867b8c11000
+8590  02:55:32.295225 mmap(0xf867b8c20000, 1891904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0) = 0xf867b8c20000
+8590  02:55:32.295284 munmap(0xf867b8c11000, 61440) = 0
+8590  02:55:32.295312 munmap(0xf867b8dee000, 3648) = 0
+8590  02:55:32.295333 mprotect(0xf867b8dc9000, 81920, PROT_NONE) = 0
+8590  02:55:32.295364 mmap(0xf867b8ddd000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0x1ad000) = 0xf867b8ddd000
+8590  02:55:32.295535 mmap(0xf867b8de2000, 48704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf867b8de2000
+8590  02:55:32.295683 close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0
+8590  02:55:32.295938 set_tid_address(0xf867b8e38388) = 8590
+8590  02:55:32.296064 set_robust_list(0xf867b8e38040, 24) = 0
+8590  02:55:32.296222 rseq(0xf867b8e38740, 0x21, 0, 0xd428bc00) = 0
+8590  02:55:32.296612 mprotect(0xf867b8ddd000, 12288, PROT_READ) = 0
+8590  02:55:32.296653 mprotect(0xc729b469f000, 4096, PROT_READ) = 0
+8590  02:55:32.296676 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf867b8e35000
+8590  02:55:32.296717 mprotect(0xf867b8e3f000, 8192, PROT_READ) = 0
+8590  02:55:32.296781 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+8590  02:55:32.296864 getrandom("\x3d\x06\xa7\x57\xb6\xcb\xc1\x18", 8, GRND_NONBLOCK) = 8
+8590  02:55:32.296973 munmap(0xf867b8def000, 72223) = 0
+8590  02:55:32.297220 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_INTERRUPT|SA_NODEFER|SA_RESETHAND}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+8590  02:55:32.297474 brk(NULL)         = 0xc729e9ad8000
+8590  02:55:32.297687 brk(0xc729e9c00000) = 0xc729e9c00000
+8590  02:55:32.297838 fstat(0</dev/pts/0<char 136:0>>, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+8590  02:55:32.298127 read(0</dev/pts/0<char 136:0>>, "result.txt\n", 1024) = 11
+8590  02:55:45.388672 openat(AT_FDCWD</home/ubuntu/Desktop/lab2>, "result.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 3</home/ubuntu/Desktop/lab2/result.txt>
+8590  02:55:45.389110 pipe2([4<pipe:[33590]>, 5<pipe:[33590]>], 0) = 0
+8590  02:55:45.389260 pipe2([6<pipe:[33593]>, 7<pipe:[33593]>], 0) = 0
+8590  02:55:45.389459 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+8590  02:55:45.389717 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+8608  02:55:45.390304 set_robust_list(0xf867b8e38040, 24) = 0
+8608  02:55:45.390555 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8590  02:55:45.390702 <... clone resumed>, child_tidptr=0xf867b8e38030) = 8608
+8608  02:55:45.390732 <... rt_sigprocmask resumed>, NULL, 8) = 0
+8590  02:55:45.390806 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+8608  02:55:45.390968 dup3(7<pipe:[33593]>, 2</dev/pts/0<char 136:0>>, 0 <unfinished ...>
+8590  02:55:45.391035 <... rt_sigprocmask resumed>, NULL, 8) = 0
+8590  02:55:45.391134 close(4<pipe:[33590]> <unfinished ...>
+8608  02:55:45.391170 <... dup3 resumed>) = 2<pipe:[33593]>
+8608  02:55:45.391948 dup3(4<pipe:[33590]>, 0</dev/pts/0<char 136:0>>, 0 <unfinished ...>
+8590  02:55:45.392607 <... close resumed>) = 0
+8608  02:55:45.392654 <... dup3 resumed>) = 0<pipe:[33590]>
+8590  02:55:45.392761 close(7<pipe:[33593]> <unfinished ...>
+8608  02:55:45.392949 dup3(3</home/ubuntu/Desktop/lab2/result.txt>, 1</dev/pts/0<char 136:0>>, 0 <unfinished ...>
+8590  02:55:45.393039 <... close resumed>) = 0
+8590  02:55:45.393146 close(3</home/ubuntu/Desktop/lab2/result.txt> <unfinished ...>
+8608  02:55:45.393184 <... dup3 resumed>) = 1</home/ubuntu/Desktop/lab2/result.txt>
+8590  02:55:45.393246 <... close resumed>) = 0
+8608  02:55:45.393266 close(4<pipe:[33590]> <unfinished ...>
+8590  02:55:45.393387 fcntl(5<pipe:[33590]>, F_GETFL <unfinished ...>
+8608  02:55:45.393437 <... close resumed>) = 0
+8590  02:55:45.393465 <... fcntl resumed>) = 0x1 (flags O_WRONLY)
+8608  02:55:45.393519 close(5<pipe:[33590]>) = 0
+8608  02:55:45.393577 close(6<pipe:[33593]>) = 0
+8590  02:55:45.393700 fcntl(6<pipe:[33593]>, F_GETFL <unfinished ...>
+8608  02:55:45.393730 close(7<pipe:[33593]> <unfinished ...>
+8590  02:55:45.393851 <... fcntl resumed>) = 0 (flags O_RDONLY)
+8608  02:55:45.394065 <... close resumed>) = 0
+8590  02:55:45.394153 read(0</dev/pts/0<char 136:0>> <unfinished ...>
+8608  02:55:45.394383 close(3</home/ubuntu/Desktop/lab2/result.txt>) = 0
+8608  02:55:45.395115 execve("./child", ["child"], 0xfffffbf0f238 /* 54 vars */) = 0
+8608  02:55:45.396004 brk(NULL)         = 0xbc8ed5ebf000
+8608  02:55:45.396299 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf0b7cfef3000
+8608  02:55:45.396584 faccessat(AT_FDCWD</home/ubuntu/Desktop/lab2>, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+8608  02:55:45.396995 openat(AT_FDCWD</home/ubuntu/Desktop/lab2>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+8608  02:55:45.397254 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=72223, ...}) = 0
+8608  02:55:45.397452 mmap(NULL, 72223, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0xf0b7cfeab000
+8608  02:55:45.397721 close(3</etc/ld.so.cache>) = 0
+8608  02:55:45.397974 openat(AT_FDCWD</home/ubuntu/Desktop/lab2>, "/usr/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/aarch64-linux-gnu/libc.so.6>
+8608  02:55:45.398029 read(3</usr/lib/aarch64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\3101\2\0\0\0\0\0@\0\0\0\0\0\0\0P9\33\0\0\0\0\0\0\0\0\0@\08\0\r\0@\0@\0?\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\330\2\0\0\0\0\0\0\330\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\250?\27\0\0\0\0\0\250?\27\0\0\0\0\0\250?\27\0\0\0\0\0\33\0\0\0\0\0\0\0\33\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+8608  02:55:45.398062 fstat(3</usr/lib/aarch64-linux-gnu/libc.so.6>, {st_mode=S_IFREG|0755, st_size=1788240, ...}) = 0
+8608  02:55:45.398091 mmap(NULL, 1957440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf0b7cfccd000
+8608  02:55:45.398126 mmap(0xf0b7cfcd0000, 1891904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0) = 0xf0b7cfcd0000
+8608  02:55:45.398178 munmap(0xf0b7cfccd000, 12288) = 0
+8608  02:55:45.398204 munmap(0xf0b7cfe9e000, 52800) = 0
+8608  02:55:45.398227 mprotect(0xf0b7cfe79000, 81920, PROT_NONE) = 0
+8608  02:55:45.398258 mmap(0xf0b7cfe8d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/aarch64-linux-gnu/libc.so.6>, 0x1ad000) = 0xf0b7cfe8d000
+8608  02:55:45.398309 mmap(0xf0b7cfe92000, 48704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf0b7cfe92000
+8608  02:55:45.398346 close(3</usr/lib/aarch64-linux-gnu/libc.so.6>) = 0
+8608  02:55:45.398399 set_tid_address(0xf0b7cfef4388) = 8608
+8608  02:55:45.398424 set_robust_list(0xf0b7cfef4040, 24) = 0
+8608  02:55:45.398450 rseq(0xf0b7cfef4740, 0x21, 0, 0xd428bc00) = 0
+8608  02:55:45.398536 mprotect(0xf0b7cfe8d000, 12288, PROT_READ) = 0
+8608  02:55:45.398581 mprotect(0xbc8eae4cf000, 4096, PROT_READ) = 0
+8608  02:55:45.398620 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf0b7cfef1000
+8608  02:55:45.398662 mprotect(0xf0b7cfefb000, 8192, PROT_READ) = 0
+8608  02:55:45.398721 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+8608  02:55:45.398775 getrandom("\xee\xfd\xe6\x63\xff\xa6\x11\xcf", 8, GRND_NONBLOCK) = 8
+8608  02:55:45.398806 munmap(0xf0b7cfeab000, 72223) = 0
+8608  02:55:45.398962 brk(NULL)         = 0xbc8ed5ebf000
+8608  02:55:45.398983 brk(0xbc8ed6000000) = 0xbc8ed6000000
+8608  02:55:45.399021 fstat(0<pipe:[33590]>, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+8608  02:55:45.399063 read(0<pipe:[33590]> <unfinished ...>
+8590  02:55:54.394446 <... read resumed>, "Hello.\n", 1024) = 7
+8590  02:55:54.394648 fstat(5<pipe:[33590]>, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+8590  02:55:54.394967 write(5<pipe:[33590]>, "Hello.\n", 7) = 7
+8608  02:55:54.395107 <... read resumed>, "Hello.\n", 4096) = 7
+8590  02:55:54.395133 fstat(6<pipe:[33593]>, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+8608  02:55:54.395243 fstat(1</home/ubuntu/Desktop/lab2/result.txt> <unfinished ...>
+8590  02:55:54.395290 read(6<pipe:[33593]> <unfinished ...>
+8608  02:55:54.395412 <... fstat resumed>, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+8608  02:55:54.395551 write(1</home/ubuntu/Desktop/lab2/result.txt>, "Hello.\n", 7) = 7
+8608  02:55:54.395970 write(2<pipe:[33593]>, "\n", 1) = 1
+8590  02:55:54.396184 <... read resumed>, "\n", 4096) = 1
+8608  02:55:54.396210 read(0<pipe:[33590]> <unfinished ...>
+8590  02:55:54.396458 read(0</dev/pts/0<char 136:0>>, "my boy\n", 1024) = 7
+8590  02:56:13.488535 write(5<pipe:[33590]>, "my boy\n", 7) = 7
+8608  02:56:13.488805 <... read resumed>, "my boy\n", 4096) = 7
+8590  02:56:13.488940 read(6<pipe:[33593]> <unfinished ...>
+8608  02:56:13.489013 write(2<pipe:[33593]>, "\320\276\321\210\320\270\320\261\320\272\320\260 - \321\201\321\202\321\200\320\276\320\272\320\260 2 \320\264\320\276\320\273\320\266\320\275\320\260 \320\276\320\272\320\260\320\275\321\207\320\270\320\262\320\260\321\202\321\214\321\201\321\217 \320\275\320\260 '.' \320\270\320\273\320\270 ';'\n", 88 <unfinished ...>
+8590  02:56:13.489178 <... read resumed>, "\320\276\321\210\320\270\320\261\320\272\320\260 - \321\201\321\202\321\200\320\276\320\272\320\260 2 \320\264\320\276\320\273\320\266\320\275\320\260 \320\276\320\272\320\260\320\275\321\207\320\270\320\262\320\260\321\202\321\214\321\201\321\217 \320\275\320\260 '.' \320\270\320\273\320\270 ';'\n", 4096) = 88
+8608  02:56:13.489219 <... write resumed>) = 88
+8590  02:56:13.489320 fstat(1</dev/pts/0<char 136:0>> <unfinished ...>
+8608  02:56:13.489467 read(0<pipe:[33590]> <unfinished ...>
+8590  02:56:13.489510 <... fstat resumed>, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+8590  02:56:13.489710 write(1</dev/pts/0<char 136:0>>, "\320\276\321\210\320\270\320\261\320\272\320\260 - \321\201\321\202\321\200\320\276\320\272\320\260 2 \320\264\320\276\320\273\320\266\320\275\320\260 \320\276\320\272\320\260\320\275\321\207\320\270\320\262\320\260\321\202\321\214\321\201\321\217 \320\275\320\260 '.' \320\270\320\273\320\270 ';'\n", 88) = 88
+8590  02:56:13.490081 read(0</dev/pts/0<char 136:0>>, "bazaru jackson;\n", 1024) = 16
+8590  02:56:24.819352 write(5<pipe:[33590]>, "bazaru jackson;\n", 16) = 16
+8608  02:56:24.819652 <... read resumed>, "bazaru jackson;\n", 4096) = 16
+8590  02:56:24.819720 read(6<pipe:[33593]> <unfinished ...>
+8608  02:56:24.819922 write(1</home/ubuntu/Desktop/lab2/result.txt>, "bazaru jackson;\n", 16) = 16
+8608  02:56:24.820264 write(2<pipe:[33593]>, "\n", 1 <unfinished ...>
+8590  02:56:24.820439 <... read resumed>, "\n", 4096) = 1
+8608  02:56:24.820482 <... write resumed>) = 1
+8590  02:56:24.820574 read(0</dev/pts/0<char 136:0>> <unfinished ...>
+8608  02:56:24.820685 read(0<pipe:[33590]> <unfinished ...>
+8590  02:56:37.144212 <... read resumed>, "", 1024) = 0
+8590  02:56:37.144583 close(5<pipe:[33590]>) = 0
+8608  02:56:37.144951 <... read resumed>, "", 4096) = 0
+8590  02:56:37.145083 read(6<pipe:[33593]> <unfinished ...>
+8608  02:56:37.145174 close(1</home/ubuntu/Desktop/lab2/result.txt>) = 0
+8608  02:56:37.145501 exit_group(0)     = ?
+8590  02:56:37.146168 <... read resumed>, "", 4096) = 0
+8608  02:56:37.146205 +++ exited with 0 +++
+8590  02:56:37.146326 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8608, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+8590  02:56:37.146471 close(6<pipe:[33593]>) = 0
+8590  02:56:37.146689 wait4(8608, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 8608
+8590  02:56:37.147304 exit_group(0)     = ?
+8590  02:56:37.147925 +++ exited with 0 +++
